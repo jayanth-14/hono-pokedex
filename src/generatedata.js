@@ -47,7 +47,7 @@ const generatePokemonJson = async (destination) => {
   try {
     const urls = await getPokemonUrls();
     const pokemonData = await Promise.all(urls.map(fetchPokemon));
-    console.log("✅ Fetching all pokemons is done.");
+    console.log("✅ Fetching all pokemon is done.");
     const jsonFile = await Deno.open(destination, {
       write: true,
       create: true,
@@ -80,12 +80,20 @@ const generatePokemonTypesJson = async (destination) => {
 };
 
 const fetchData = async (outputDir = "data") => {
-  await Deno.mkdir(outputDir);
+  try {
+    await Deno.mkdir(outputDir);
+  } catch (error) {
+    if (error instanceof Deno.errors.AlreadyExists) {
+      console.log(`output directory "${outputDir}" is already present.`);
+    } else {
+      console.log(error);
+    }
+  }
 
   const typesJsonLocation = path.join(outputDir, "types.json");
   await generatePokemonTypesJson(typesJsonLocation);
 
-  const pokemonJsonLocation = path.join(outputDir, "pokemons.json");
+  const pokemonJsonLocation = path.join(outputDir, "pokemon.json");
   await generatePokemonJson(pokemonJsonLocation);
 };
 

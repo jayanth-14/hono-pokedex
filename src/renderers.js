@@ -1,8 +1,9 @@
-const renderSidebarFn = (eta, types) => eta.render("sidebar.html", { types });
+const renderSidebarFn = (eta, types, activeType = "all") =>
+  eta.render("sidebar.html", { types, activeType });
 
-const renderCardsFn = (eta, pokemons) =>
-  eta.render("cardsContainer.html", { pokemons });
-
+const renderCardsFn = (eta, pokemon) => {
+  return eta.render("cardsContainer.html", { pokemon });
+};
 const renderPageFn = (eta, title, sidebarHtml, cardsHtml) =>
   eta.render("layout.html", {
     title,

@@ -1,7 +1,7 @@
 {
   "tasks": {
     "dev": "deno run -A --watch main.js",
-    "generate": "deno run -A src/data.js"
+    "generate": "deno run -A src/generateData.js"
   },
   "imports": {
     "@std/assert": "jsr:@std/assert@1",

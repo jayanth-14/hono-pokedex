@@ -1,13 +1,5 @@
 import * as path from "@std/path";
 
-export const getPokemonData = async () => {
-  return JSON.parse(await Deno.readTextFile("./pokemon.json"));
-};
-
-export const getPokemonTypes = async () => {
-  return JSON.parse(await Deno.readTextFile("./types.json"));
-};
-
 const extractStats = (data) => {
   const stats = {};
   stats.weight = data.weight;
@@ -74,8 +66,10 @@ const generatePokemonTypesJson = async (destination) => {
   try {
     const res = await fetch("https://pokeapi.co/api/v2/type");
     console.log("✅ Fetching Types data is done.");
+
     const data = await res.json();
     const types = data.results.map(({ name }) => name);
+
     await Deno.writeTextFile(destination, JSON.stringify(types));
     console.log("✅ Writing Types json data is done.");
   } catch (error) {

@@ -1,0 +1,27 @@
+<div class="card">
+  <div class="img-container">
+    <img
+      src="<%= it.url %>"
+      alt="an image of pokemon <%= it.name %>"
+      class="card-img"
+    />
+  </div>
+  <div class="card-details">
+    <div class="general">
+      <p class="name"><%= it.name %></p>
+      <ul class="types">
+        <% it.types.forEach((type) => { %>
+        <li class="type <%= type %>"><%= type %></li>
+        <% }) %>
+      </ul>
+    </div>
+    <table class="stats-table">
+      <% Object.entries(it.stats).forEach(([name, value]) => { %>
+      <tr class="stat">
+        <td><%= name === "hp" ? "HP" : name %></td>
+        <td><%= value %></td>
+      </tr>
+      <% }) %>
+    </table>
+  </div>
+</div>

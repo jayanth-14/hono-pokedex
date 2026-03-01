@@ -1,0 +1,11 @@
+<aside id="side-bar">
+  <ul>
+    <% it.types.forEach((currentType) => { %> <% const classes = currentType ===
+    it.activeType ? `${currentType}-nav ${currentType}` : `${currentType}-nav`; %>
+    <li class="<%= classes %>">
+      <a href="/<%= currentType %>"><%= currentType %></a>
+    </li>
+    <% }) %>
+  </ul>
+</aside>
+`

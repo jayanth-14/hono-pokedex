@@ -1,0 +1,191 @@
+.grass {
+  background-color: mediumseagreen;
+  color: #fff !important;
+}
+
+.poison {
+  background-color: mediumpurple;
+  color: #fff !important;
+}
+
+.fire {
+  background-color: goldenrod;
+  color: #fff !important;
+}
+
+.flying {
+  background-color: steelblue;
+  color: #fff !important;
+}
+
+.water {
+  background-color: dodgerblue;
+  color: #fff !important;
+}
+
+.bug {
+  background-color: brown;
+  color: #fff !important;
+}
+
+.normal {
+  background-color: gray;
+  color: #fff !important;
+}
+
+.ground {
+  background-color: peru;
+  color: #fff !important;
+}
+
+.fairy {
+  background-color: hotpink;
+  color: #fff !important;
+}
+
+.fighting {
+  background-color: crimson;
+  color: #fff !important;
+
+  color: #fff !important;
+}
+
+.electric {
+  background-color: hsl(51deg 73% 50%);
+  color: #fff !important;
+}
+
+.psychic {
+  background-color: orange;
+  color: #fff !important;
+}
+
+.rock {
+  background-color: dimgray;
+  color: #fff !important;
+}
+
+.ice {
+  background-color: darkcyan;
+  color: #fff !important;
+}
+
+.dragon {
+  background-color: mediumaquamarine;
+  color: #fff !important;
+}
+
+.ghost {
+  background-color: black;
+  color: #fff !important;
+}
+
+.dark {
+  background-color: slategray;
+  color: #fff !important;
+}
+
+.steel {
+  background-color: steelblue;
+  color: #fff !important;
+}
+
+.all {
+  background-color: dimgray;
+  color: #fff !important;
+}
+
+.grass-nav:hover {
+  background-color: mediumseagreen;
+  color: #fff !important;
+}
+
+.poison-nav:hover {
+  background-color: mediumpurple;
+  color: #fff !important;
+}
+
+.fire-nav:hover {
+  background-color: goldenrod;
+  color: #fff !important;
+}
+
+.flying-nav:hover {
+  background-color: steelblue;
+  color: #fff !important;
+}
+
+.water-nav:hover {
+  background-color: dodgerblue;
+  color: #fff !important;
+}
+
+.bug-nav:hover {
+  background-color: brown;
+  color: #fff !important;
+}
+
+.normal-nav:hover {
+  background-color: gray;
+  color: #fff !important;
+}
+
+.ground-nav:hover {
+  background-color: peru;
+  color: #fff !important;
+}
+
+.fairy-nav:hover {
+  background-color: hotpink;
+  color: #fff !important;
+}
+
+.fighting-nav:hover {
+  background-color: crimson;
+  color: #fff !important;
+}
+
+.electric-nav:hover {
+  background-color: hsl(51deg 73% 50%);
+  color: #fff !important;
+}
+
+.psychic-nav:hover {
+  background-color: orange;
+  color: #fff !important;
+}
+
+.rock-nav:hover {
+  background-color: dimgray;
+  color: #fff !important;
+}
+
+.ice-nav:hover {
+  background-color: darkcyan;
+  color: #fff !important;
+}
+
+.dragon-nav:hover {
+  background-color: mediumaquamarine;
+  color: #fff !important;
+}
+
+.ghost-nav:hover {
+  background-color: black;
+  color: #fff !important;
+}
+
+.dark-nav:hover {
+  background-color: slategray;
+  color: #fff !important;
+}
+
+.steel-nav:hover {
+  background-color: steelblue;
+  color: #fff !important;
+}
+
+.all-nav:hover {
+  background-color: dimgray;
+  color: #fff !important;
+}

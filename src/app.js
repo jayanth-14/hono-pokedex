@@ -32,6 +32,8 @@ export const createApp = async ({ eta }) => {
   app.use(await setContext(eta));
 
   app.get("/", handleHomePage);
+  app.get("/404", (c) => c.html(eta.render("404.html")));
+  app.get("/404_0", (c) => c.html(eta.render("404_0.html")));
   app.get("/:type", servePageByType);
 
   // serving static files

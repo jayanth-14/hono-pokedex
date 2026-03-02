@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>404 - Wild Error Appeared!</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --pokeball-red: #ff0000;
+        --pokeball-white: #ffffff;
+        --ui-blue: #30a7d0;
+        --ui-dark-blue: #1e4e6b;
+        --text-black: #333;
+      }
+
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: #f8f8f8;
+        font-family: "Press Start 2P", cursive; /* Retro 8-bit font */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        color: var(--text-black);
+        background-image:
+          linear-gradient(45deg, #efefef 25%, transparent 25%),
+          linear-gradient(-45deg, #efefef 25%, transparent 25%),
+          linear-gradient(45deg, transparent 75%, #efefef 75%),
+          linear-gradient(-45deg, transparent 75%, #efefef 75%);
+        background-size: 20px 20px;
+        background-position:
+          0 0,
+          0 10px,
+          10px -10px,
+          -10px 0px;
+      }
+
+      .container {
+        background-color: white;
+        border: 4px solid var(--text-black);
+        box-shadow: 10px 10px 0px rgba(0, 0, 0, 0.2);
+        padding: 40px;
+        text-align: center;
+        max-width: 600px;
+        width: 90%;
+        position: relative;
+      }
+
+      /* This creates the classic dialogue box look */
+      .dialogue-box {
+        border: 4px solid var(--text-black);
+        border-radius: 0;
+        background-color: #fff;
+        padding: 20px;
+        position: relative;
+        margin-top: 20px;
+      }
+
+      /* The blue header bar found in old games */
+      .dialogue-box::before {
+        content: "";
+        position: absolute;
+        top: -4px;
+        left: -4px;
+        right: -4px;
+        height: 40px;
+        background-color: var(--ui-blue);
+        border: 4px solid var(--text-black);
+        z-index: 0;
+      }
+
+      h1 {
+        font-size: 3rem;
+        margin: 0 0 20px 0;
+        text-shadow: 4px 4px 0px #ccc;
+        color: var(--pokeball-red);
+        position: relative;
+        z-index: 1;
+      }
+
+      .psyduck-img {
+        width: 150px;
+        height: auto;
+        margin: 20px 0;
+        image-rendering: pixelated; /* Keeps it crisp */
+        animation: bounce 2s infinite;
+      }
+
+      p {
+        font-size: 0.8rem;
+        line-height: 1.8;
+        position: relative;
+        z-index: 1;
+        margin-bottom: 30px;
+      }
+
+      .btn {
+        display: inline-block;
+        background-color: var(--pokeball-red);
+        color: white;
+        padding: 15px 20px;
+        text-decoration: none;
+        border: 4px solid black;
+        font-size: 0.8rem;
+        box-shadow: 4px 4px 0px black;
+        transition:
+          transform 0.1s,
+          box-shadow 0.1s;
+        cursor: pointer;
+        position: relative;
+        z-index: 1;
+      }
+
+      .btn:hover {
+        transform: translate(2px, 2px);
+        box-shadow: 2px 2px 0px black;
+      }
+
+      .btn:active {
+        transform: translate(4px, 4px);
+        box-shadow: none;
+      }
+
+      /* Psyduck Animation */
+      @keyframes bounce {
+        0%,
+        100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-10px);
+        }
+      }
+
+      /* Mobile adjustments */
+      @media (max-width: 600px) {
+        h1 {
+          font-size: 2rem;
+        }
+        .container {
+          padding: 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>404</h1>
+
+      <!-- The requested Psyduck image -->
+      <img
+        src="https://assets.pokemon.com/static2/_ui/img/global/psyduck.png"
+        alt="Confused Psyduck"
+        class="psyduck-img"
+      />
+
+      <div class="dialogue-box">
+        <p>
+          <strong>Wild 404 Not Found appeared!</strong><br /><br />
+          It looks confused... <br />
+          "Gyaa?"<br /><br />
+          The page you are looking for ran away!<br />
+          There is nothing left here but water.
+        </p>
+
+        <a href="/" class="btn">USE [HOME BUTTON]</a>
+      </div>
+    </div>
+  </body>
+</html>
